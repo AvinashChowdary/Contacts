@@ -33,23 +33,23 @@ Contacts Reusable Component :
   }
 
  2(I) In order to make a call directly to the given phone number, we need to call the method
-
+  ```java
   if (hasPermissionsToMakePhoneCall()) {
     // it directly places the call for the given number
      new PhoneCall(MainActivity.this).makePhoneCall("8848032919");
   } else {
         requestPhoneCallPermission();
   }
-
+  ```
   2(II) In order to get the number on the dial pad, we need to call the method
-
+   ```java
    if (hasPermissionsToMakePhoneCall()) {
           // it places the given number on to the dial pad
           new PhoneCall(MainActivity.this).getDialPadPhoneNumber("8848032919");
    } else {
            requestPhoneCallPermission();
    }
-
+   ```
 Note :
 
 Beginning in Android 6.0 (API level 23), users grant permissions to apps while the app is running, not when they install the app.
@@ -138,7 +138,7 @@ Target Api : 23 then we need to add permissions dynamically
 
     }
 
-String Resources : <string name="not_specified">Not Specified</string>
+String Resources : `<string name="not_specified">Not Specified</string>`
 
  Improvements :
 
