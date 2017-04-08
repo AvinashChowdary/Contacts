@@ -72,8 +72,8 @@ Method to be imported into the activity, in which we are going to use this reusa
 
 Target Api : 23 then we need to add permissions dynamically
 
-    ```java
-    private void requestPhoneCallPermission() {
+```java
+private void requestPhoneCallPermission() {
         if (ActivityCompat.shouldShowRequestPermissionRationale(MainActivity.this, Manifest.permission.CALL_PHONE)) {
             Toast.makeText(MainActivity.this, "We need permission so you can call your friends.", Toast.LENGTH_LONG).show();
             requestResultPhoneCallPermission();
@@ -137,8 +137,8 @@ Target Api : 23 then we need to add permissions dynamically
             }
         }
 
-    }
-    ```
+    }    
+```
 String Resources : `<string name="not_specified">Not Specified</string>`
 
  Improvements :
